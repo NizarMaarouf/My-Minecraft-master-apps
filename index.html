@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Minecraft</title>
+    <link rel="stylesheet" href="./css/my-normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/minecraftia" type="text/css" />
+    <link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="landingPage">
+
+        <div class="tutorial-container">
+            <h1 class="tutorialHeader">A table explaining how to play the game</h1>
+            <h2>Pick a Tool</h2>
+            <div class="toolBox" data-type="axe"></div>
+            <div class="toolBox" data-type="pickaxe"></div>
+            <div class="toolBox" data-type="shovel"></div>
+            <h2>collect Elements</h2>
+            <div>
+                <div class="tutEl" data-type="trunk">3</div>
+                <div class="tutEl" data-type="leaves">5</div>
+            </div>
+            <div class="tutEl" data-type="rock">1</div>
+            <div>
+                <div class="tutEl" data-type="dirt">6</div>
+                <div class="tutEl" data-type="dirtgrass">6</div>
+            </div>
+            <h2>Place Elements on Empty Space</h2>
+            <div>
+                <h3>Sky -></h3>
+                <br />
+                <h3>Clouded -></h3>
+            </div>
+            <div>
+                <div class="tutEl" data-type="sky"></div>
+                <div class="tutEl" data-type="cloud"></div>
+            </div>
+            <h4>Watch Your Inventory<br> Elements Count!</h4>
+        </div>
+
+        <img class="minecraftTitle" src="/css/img/pngegg.png" />
+
+        <button class="startBtn" type="button">Start Game</button>
+        <h2 class="credit">By Nizar Maarouf</h2>
+    </div>
+    <div id="minecraft">
+        <div id="world"></div>
+        <div id="sideToolBar">
+            <div id="tools"></div>
+            <div id="inventory"></div>
+        </div>
+    </div>
+
+    <script src="./createWorld.js"></script>
+    <script src="./createSidebar.js"></script>
+    <script src="./landing_page.js"></script>
+    <script src="./game_functions.js"></script>
+</body>
+
+</html>
